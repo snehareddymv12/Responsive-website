@@ -1,0 +1,71 @@
+.programs{
+    margin:80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+
+
+}
+.program img{
+    width:100%;
+    border-radius: 10px;
+    display: block;
+    
+   
+    
+}
+.program{
+    flex-basis: 31%;
+    margin: 20px;
+    position: relative;
+}
+.caption{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     color: #fff;
+     padding-top: 40%;
+    opacity: 0;
+    background: rgba(0,15, 153, 0.3);
+    transition: 0.4s;
+   
+ 
+}
+.caption img{
+    width: 60px;
+   margin-bottom: 10px;
+}
+.program:hover .caption{
+   opacity: 1;
+   padding-top: 0;
+}
+/* another way to apply transition */
+/* .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding-top: 40%; /* Initial padding */
+    /* opacity: 0; /* Initially hidden */
+    /* background: rgba(0, 15, 153, 0.3);
+    transition: opacity 0.4s ease-in-out, padding-top 0.4s ease-in-out;
+} */ 
+
+ /* .program:hover .caption {
+    opacity: 1;
+    padding-top: 0; 
+}  */
+
